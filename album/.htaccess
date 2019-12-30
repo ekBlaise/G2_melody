@@ -1,1 +1,13 @@
-Redirect 403 /album/ https://g2melody.com
+#<--Below this line-->
+AuthUserFile /dev/null
+AuthGroupFile /dev/null
+
+RewriteEngine On
+
+RewriteCond %{HTTP_REFERER} !^https://www.g2melody.com.* [NC]
+RewriteCond %{HTTP_REFERER} !^https://g2melody.com/album.* [NC]
+RewriteCond %{HTTP_REFERER} !^https://g2melody.com.* [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.g2melody.com/album.* [NC]
+
+RewriteRule /* https://www.g2melody.com/index.php [R,L]
+#<--To above this line-->
