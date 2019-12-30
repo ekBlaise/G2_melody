@@ -410,23 +410,23 @@ mailChimp();
 
       $('.small-btn').on('click', function(){
         // shows the number of the song to download
-        console.log('initial', $('#montant').val())
+        console.log('initial', $('#montant').val());
         $('#montant').val(250); // change the amount to be for singles 250
         $('#transaction-type').val('single-purchase'); // change the transaction type
         $('#song-title').val($(this).attr('id')); // change the song to download
-        $('.descr').html('You are about to make a payment of <b>250frs</b>') //
-        console.log('after', $('#montant').val())
+        $('.descr').html('You are about to make a payment of <b>250frs</b>'); //
+        console.log('after', $('#montant').val());
     
       });
     
       $('.play').on('click', function(){
         // shows the number of the song to download
-        console.log('initial', $('#montant').val())
+        console.log('initial', $('#montant').val());
         $('#montant').val(1500); // change the amount to be for album 1500
         $('#transaction-type').val('album-purchase'); // change the transaction type
         $('#song-title').val(0); // change the song to download
-        $('.descr').html('You are about to make a payment of <b>1500frs</b>') //
-        console.log('after', $('#montant').val())
+        $('.descr').html('You are about to make a payment of <b>1500frs</b>'); //
+        console.log('after', $('#montant').val());
     
       });
     // $('#momosubmit').click(function(){
@@ -449,21 +449,37 @@ mailChimp();
       },
       error: function ( response ){
         console.log('form not submitted.');
-        console.log(transaction)
-        console.log(response)
+        console.log(transaction);
+        console.log(response);
         if(transaction == 'album-purchase'){
           // initiate album download here
           alert('Thank you for Downloading!');
           downloadFile('album/G2Melody_Album.zip', 'G2Melody_Album');
+          $('#paymentpop').fadeOut(function(){
+            //$(this).remove();
+            $(this).hide();
+            //$('#afterpay').show();
+            // opener.location.reload(true);
+            // self.close();\
+          });
+          location.reload();
         }
         else if (transaction == 'donating') {
-          if(($.trim($('#montant').val()) == '') || ($.trim($('#don_number').val()) == '')){
+          if(($.trim($('#montant').val()) === '') || ($.trim($('#don_number').val()) === '')){
                    alert('Input can not be left blank');
                    return false;
                 }
-          else (
-            alert('Thank you for Donating!')
-            );
+          else {
+            alert('Thank you for Donating!');
+            $('#paymentpop').fadeOut(function(){
+            $(this).remove();
+            //$(this).hide();
+            //$('#afterpay').show();
+            // opener.location.reload(true);
+            // self.close();\
+          });
+          location.reload();
+            }
         }
         else if (transaction == 'single-purchase'){
           alert('Thank you for Downloading!');
