@@ -485,25 +485,53 @@ mailChimp();
           alert('Thank you for Downloading!');
           if (title == 1) {
             // initiate album download here
-            downloadFile('album/G2Melody_Album/G 2____Love.mp3', 'G2Melody_Album');
+            downloadFile('album/G2Melody_Album/01_G2____Love.zip', 'G2Melody_Album');
+            $('#paymentpop').fadeOut(function(){
+              $(this).hide();
+            });
+            location.reload();
           }
           else if(title == 2){
-            downloadFile('album/G2Melody_Album/G 2____Better_than_life.mp3', 'G2Melody_Album');
+            downloadFile('album/G2Melody_Album/02_G2____Better_than_life.zip', 'G2Melody_Album');
+            $('#paymentpop').fadeOut(function(){
+              $(this).hide();
+            });
+            location.reload();
           }
           else if(title == 3){
-            downloadFile('album/G2Melody_Album/G 2____When We Pray.mp3', 'G2Melody_Album');
+            downloadFile('album/G2Melody_Album/03_G2____When_We_Pray.zip', 'G2Melody_Album');
+            $('#paymentpop').fadeOut(function(){
+              $(this).hide();
+            });
+            location.reload();
           }
           else if(title == 4){
-            downloadFile('album/G2Melody_Album/G 2____We Are Better Together.mp3', 'G2Melody_Album');
+            downloadFile('album/G2Melody_Album/04_G2____We_Are_Better_Together.zip', 'G2Melody_Album');
+            $('#paymentpop').fadeOut(function(){
+              $(this).hide();
+            });
+            location.reload();
           }
           else if(title == 5){
-            downloadFile('album/G2Melody_Album/G 2____Nothing Without You.mp3', 'G2Melody_Album');
+            downloadFile('album/G2Melody_Album/05_G2____Nothing_Without_You.zip', 'G2Melody_Album');
+            $('#paymentpop').fadeOut(function(){
+              $(this).hide();
+            });
+            location.reload();
           }
           else if(title == 6 ){
-            downloadFile('album/G2Melody_Album/G 2____Haven of Rest_Love lifted me.mp3', 'G2Melody_Album');
+            downloadFile('album/G2Melody_Album/06_G2____Haven_of_Rest_Love_lifted_me.zip', 'G2Melody_Album');
+            $('#paymentpop').fadeOut(function(){
+              $(this).hide();
+            });
+            location.reload();
           }
           else if(title == 7){
-            downloadFile('album/G2Melody_Album/G 2____We Need Peace.mp3', 'G2Melody_Album');
+            downloadFile('album/G2Melody_Album/07_G2____We_Need_Peace.zip', 'G2Melody_Album');
+            $('#paymentpop').fadeOut(function(){
+              $(this).hide();
+            });
+            location.reload();
           }
           
         }

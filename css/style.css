@@ -6937,3 +6937,14 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* Single songs list */
+.background + section .album-tracks {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+}
+section .album-tracks {
+  background: #f8f8f8;
+  border: 1px solid #efefef;
+  margin-top: 20px;
+}
