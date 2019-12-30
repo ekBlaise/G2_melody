@@ -1,4 +1,1 @@
-<FilesMatch ".*">
-    Order Allow,Deny
-    Deny from All
-</FilesMatch>
+Redirect 403 /album/ https://g2melody.com
