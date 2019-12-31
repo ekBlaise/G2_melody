@@ -434,7 +434,43 @@ mailChimp();
     //        alert('Input can not be left blank');
     //        return false;
     //     }
-    //  });    
+    //  }); 
+    // Toglle the playlist to show and hide songs for users to listen to bits of the song before buying
+    $(document).ready(function() {
+      $('.wrapper').click(function() {
+        $('.hidden-song').toggle();
+      });
+    });  
+    $(document).ready(function() {
+      $('.wrapper1').click(function() {
+        $('.hidden-song1').toggle();
+      });
+    });
+    $(document).ready(function() {
+      $('.wrapper2').click(function() {
+        $('.hidden-song2').toggle();
+      });
+    });
+    $(document).ready(function() {
+      $('.wrapper3').click(function() {
+        $('.hidden-song3').toggle();
+      });
+    });
+    $(document).ready(function() {
+      $('.wrapper4').click(function() {
+        $('.hidden-song4').toggle();
+      });
+    });
+    $(document).ready(function() {
+      $('.wrapper5').click(function() {
+        $('.hidden-song5').toggle();
+      });
+    });
+    $(document).ready(function() {
+      $('.wrapper6').click(function() {
+        $('.hidden-song6').toggle();
+      });
+    });
 
     $('#formmomo').submit(function(){
       var transaction = $("#transaction-type").val();
