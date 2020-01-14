@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+ 
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -34,6 +35,9 @@
         <![endif]-->
 
     <!-- header-start -->
+    <script
+    src="https://www.paypal.com/sdk/js?client-id=Afz7cJl03IMNvRCk3EU1EJxPFscrRx4m67OA1Ceia6z6s9DtfTkOa4K4gZ6kRXxalQrb_gPHFqNnpVdW"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+  </script>
     <header>
         <div class="header-area ">
             <div class="header-top_area d-none d-lg-block">
@@ -269,8 +273,25 @@
                             <li> A good internet speed will make the process faster to download.</li>
                         </ul>
                     <div class="actions">
-                        <div class="play popup-with-form" href="#paymentpop">
-                            <a class="boxed-btn3">Buy Album</a>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-md-6 col-lg-6">
+                                    <div class="play popup-with-form" href="#paymentpop">
+                                        <a class="boxed-btn3">Buy Album</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-6 col-lg-6">
+                                    <!-- <form id="formpaypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="EVVPCTZ93TDUN">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                        </form> 
+                                                                            -->
+                                 <div id="paypal-button-container"></div>
+                                        
+                                </div>
+                            </div>
                         </div>
                     </div>
                     </div>
